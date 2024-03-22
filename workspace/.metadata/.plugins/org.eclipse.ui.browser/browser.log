@@ -1,0 +1,43 @@
+
+2월 01, 2024 09:45:22.35 NEW SESSION
+2월 01, 2024 09:45:22.35 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+2월 01, 2024 09:46:02.50 [13244:7616:0201/094602.507:ERROR:interface_endpoint_client.cc(702)] Message 1 rejected by interface blink.mojom.WidgetHost
+2월 01, 2024 09:46:02.50 [13244:7616:0201/094602.507:ERROR:interface_endpoint_client.cc(702)] Message 1 rejected by interface blink.mojom.WidgetHost
+
+2월 13, 2024 09:41:49.28 NEW SESSION
+2월 13, 2024 09:41:49.29 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+2월 13, 2024 10:13:24.89 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+2월 13, 2024 10:32:43.26 [11468:26092:0213/103243.263:ERROR:interface_endpoint_client.cc(702)] Message 1 rejected by interface blink.mojom.WidgetHost
+2월 13, 2024 10:32:43.26 [11468:26092:0213/103243.264:ERROR:interface_endpoint_client.cc(702)] Message 1 rejected by interface blink.mojom.WidgetHost
+2월 13, 2024 11:22:47.41 [11468:26092:0213/112247.414:ERROR:interface_endpoint_client.cc(702)] Message 1 rejected by interface blink.mojom.WidgetHost
+2월 13, 2024 11:22:47.41 [11468:26092:0213/112247.414:ERROR:interface_endpoint_client.cc(702)] Message 1 rejected by interface blink.mojom.WidgetHost
+2월 13, 2024 11:36:41.40 [11468:26092:0213/113641.407:ERROR:interface_endpoint_client.cc(702)] Message 1 rejected by interface blink.mojom.WidgetHost
+2월 13, 2024 11:36:41.40 [11468:26092:0213/113641.407:ERROR:interface_endpoint_client.cc(702)] Message 1 rejected by interface blink.mojom.WidgetHost
+2월 13, 2024 11:44:24.83 [11468:26092:0213/114424.833:ERROR:interface_endpoint_client.cc(702)] Message 1 rejected by interface blink.mojom.WidgetHost
+2월 13, 2024 11:44:28.24 [11468:26092:0213/114427.688:ERROR:interface_endpoint_client.cc(702)] Message 1 rejected by interface blink.mojom.WidgetHost
+2월 13, 2024 11:52:55.55 [11468:26092:0213/115255.555:ERROR:interface_endpoint_client.cc(702)] Message 1 rejected by interface blink.mojom.WidgetHost
+2월 13, 2024 11:53:38.90 [11468:17080:0213/115338.907:ERROR:cert_verify_proc_builtin.cc(766)] CertVerifyProcBuiltin for cookie-sync.api.soundcast.fm failed:
+2월 13, 2024 11:53:38.90 ----- Certificate i=0 (CN=*.api.soundcast.fm) -----
+2월 13, 2024 11:53:38.90 ERROR: Time is after notAfter
+2월 13, 2024 11:53:38.90 
+2월 13, 2024 11:53:38.90 
+2월 13, 2024 11:53:56.03 [11468:26092:0213/115356.035:ERROR:interface_endpoint_client.cc(702)] Message 3 rejected by interface blink.mojom.Widget
+2월 13, 2024 11:54:42.18 [11468:26092:0213/115442.184:ERROR:interface_endpoint_client.cc(702)] Message 1 rejected by interface blink.mojom.WidgetHost
+2월 13, 2024 11:55:02.37 [11468:26092:0213/115502.370:ERROR:interface_endpoint_client.cc(702)] Message 3 rejected by interface blink.mojom.Widget
+2월 13, 2024 11:56:22.86 [11468:26092:0213/115622.864:ERROR:interface_endpoint_client.cc(702)] Message 1 rejected by interface blink.mojom.WidgetHost
+2월 13, 2024 11:56:22.86 [11468:26092:0213/115622.864:ERROR:interface_endpoint_client.cc(702)] Message 1 rejected by interface blink.mojom.WidgetHost
+2월 13, 2024 13:54:28.44 [11468:26092:0213/135428.440:ERROR:interface_endpoint_client.cc(702)] Message 1 rejected by interface blink.mojom.WidgetHost
+2월 13, 2024 14:15:26.33 [11468:26092:0213/141526.330:ERROR:interface_endpoint_client.cc(702)] Message 1 rejected by interface blink.mojom.WidgetHost
+2월 13, 2024 14:15:26.33 [11468:26092:0213/141526.330:ERROR:interface_endpoint_client.cc(702)] Message 1 rejected by interface blink.mojom.WidgetHost
+2월 13, 2024 14:15:42.23 [11468:26092:0213/141542.235:ERROR:interface_endpoint_client.cc(702)] Message 1 rejected by interface blink.mojom.WidgetHost
+
+2월 22, 2024 16:29:59.03 NEW SESSION
+2월 22, 2024 16:29:59.04 [9456:1588:0222/162959.032:ERROR:backend_impl.cc(984)] Critical error found -8
+2월 22, 2024 16:30:01.57 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+2월 22, 2024 16:31:53.00 [9456:11884:0222/163153.001:ERROR:interface_endpoint_client.cc(702)] Message 1 rejected by interface blink.mojom.WidgetHost
+2월 22, 2024 17:35:20.20 [9456:11884:0222/173520.205:ERROR:CONSOLE(1)] "Request Network.loadNetworkResource failed. {"code":-32602,"message":"Unsupported URL scheme"}", source: devtools://devtools/bundled/devtools-frontend/front_end/core/protocol_client/protocol_client.js (1)
+2월 22, 2024 17:35:33.75 [9456:11884:0222/173533.752:ERROR:CONSOLE(1)] "Request Network.loadNetworkResource failed. {"code":-32602,"message":"Unsupported URL scheme"}", source: devtools://devtools/bundled/devtools-frontend/front_end/core/protocol_client/protocol_client.js (1)
+
+2월 23, 2024 15:49:38.91 NEW SESSION
+2월 23, 2024 15:49:38.92 [6344:5164:0223/154938.910:ERROR:persistent_memory_allocator.cc(890)] Corruption detected in shared-memory segment.
+2월 23, 2024 15:49:39.61 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.

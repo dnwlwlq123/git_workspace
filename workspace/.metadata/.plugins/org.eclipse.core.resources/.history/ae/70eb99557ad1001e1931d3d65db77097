@@ -1,0 +1,14 @@
+#member
+/member/writeForm.do=member.service.WriteFormService
+
+
+#login
+/member/loginForm.do=member.service.LoginFormService
+/member/login.do=member.service.LoginService
+/member/logout.do=member.service.LogoutService
+
+
+#board
+/board/boardWriteForm.do=board.service.BoardWriteFormService
+/board/boardWrite.do=board.service.BoardWriteService
+/board/boardList.do=board.service.BoardListService

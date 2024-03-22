@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+</head> 
+<body>
+    <form action=""> <!-- method의 기본값은 get-->
+    <table border="1" cellpadding="5"  cellspacing="0" >
+        <tr>
+            <td align="center" for ="name" width="100"><strong>이름</strong></td>
+            <td>
+                        <!-- for =""와 id="" 같아야 한다-->
+                 <input type="text" name="name" id="user_name" maxlength="7" size="20" placeholder="이름 입력"/>      
+            </td>
+        </tr>
+        <tr>
+            <td align="center"><strong>성별</strong></td>
+            <td>  
+                <fieldset>
+                    <legend>성별</legend>       
+                    <input type="radio" name="gender"  value="0" checked/>
+                    <label for="gender_m">남자</label>
+                    <input type="radio" name="gender"  value="1"/>
+                    <label for="gender_f">여자</label>   
+                </fieldset>
+        </td>
+        </tr>
+       
+        <tr>
+            <td align="center" ><strong>색깔</strong></td>
+            <td>    
+                 <select style="width:110px;" name="color">
+                    <optgroup label="색깔">
+                        <option value="RED">빨강</option>
+                        <option value="GREEN">초록</option>
+                        <option value="BLUE">파랑</option>
+                        <option value="BLACK">검정</option>
+                        <option value="YELLOW">노랑</option>
+                    </optgroup>
+                 </select>
+             </td>    
+        </tr>
+
+        <tr>
+            <td align="center"><strong>취미</strong></td>
+            <td>
+                <input type="checkbox" name="hobby" value="독서"/>
+                <label>독서</label>
+                <input type="checkbox" name="hobby" value="영화"/>
+                <label>영화</label>
+                <input type="checkbox" name="hobby" value="음악"/>
+                <label>음악</label>  
+                <input type="checkbox" name="hobby" value="게임"/>
+                <label>게임</label>  
+                <input type="checkbox" name="hobby" value="쇼핑"/>
+                <label>쇼핑</label>  
+            
+        </td>
+        <tr>
+            <td align="center"><strong>과목</strong></td>
+            <td>
+                    <!--드롭다운(멀티타입)-->
+                <select style="overflow:hidden; width:100px;" name="subject" multiple size="5">
+                    <option value="Java" selected>Java</option>
+                    <option value="Servlet">Servlet</option>
+                    <option value="JSP">JSP</option>
+                    <option value="Spring">Spring</option>
+                </select>     
+            </td>
+           </tr>
+         <tr>
+            <td colspan="2" align="center">
+                <input type="submit" value="SEND">
+                <input type="reset" value="CANCLE">
+            </td>
+          </tr>
+      </table>
+    </form>
+  </body>
+</html>

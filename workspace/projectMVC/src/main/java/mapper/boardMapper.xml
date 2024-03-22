@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="boardSQL">
+	
+	<!-- 글쓰기 -->
+	
+		<!-- insert into board (id,name,email,subject,content,ref)
+						values (#{id}
+				    	, #{name}
+				    	, #{email}
+				    	, #{subject}
+				    	, #{content}
+				    	, LAST_INSERT_ID()+1) -->
+
+		<insert id="boardWrite" parameterType="java.util.Map" statementType="CALLABLE">
+			{ call boardWrite(#{id}, #{name}, #{email}, #{subject}, #{content}) }
+		</insert>
+		
+	
+	
+	<!-- 목록 -->
+	<select id="boardList" parameterType="java.util.Map" resultType="board.bean.BoardDTO">
+		<!-- select * from
+		(select rownum rn, tt.* from 
+		(select * from board order by ref desc, step asc)tt
+		) where rn>=#{startNum} and rn &lt;= #{endNum} -->
+		
+		<!-- select * from
+		(select rownum rn, tt.* from 
+		(select * from board order by ref desc, step asc)tt
+		) where rn between #{startNum} and #{endNum} -->
+		
+		<!-- <![CDATA[
+		select * from
+		(select rownum rn, tt.* from 
+		(select * from board order by ref desc, step asc)tt
+		) where rn >= #{startNum} and rn <= #{endNum}
+		 ]]> -->
+		 
+		 <![CDATA[
+		select * from board order by ref desc, step asc limit #{startNum}, #{endNum}
+		 ]]>
+	</select>
+	
+	<!-- 총글수 -->
+	<select id="getTotalA" resultType="int">
+		select count(*) from board
+	</select>
+	
+	<!-- 1개의 글보기 -->
+	<select id="getBoard" parameterType="Integer" resultType="board">
+		select * from board where seq=#{seq}
+	</select>
+	
+	
+	
+	<update id="boardReplyStep" parameterType="board">
+		update board set step=step+1 where ref=#{ref} and step > #{step}
+	</update>
+	
+	<insert id="boardReply" parameterType="java.util.Map">
+		insert into board (seq,id,name,email,subject,content,ref,lev,step,pseq,reply,hit,logtime)
+					values(	#{seq},	#{id}	
+						    	, #{name}
+						    	, #{email}
+						    	, #{subject}
+						    	, #{content}
+						    	, #{ref}
+						    	, #{lev}
+						    	, #{step}
+						    	, #{pseq}
+						    	, 0 
+						    	, 0
+						    	, now())
+	</insert>
+	
+	<update id="boardReplyReply" parameterType="int">
+	update board set reply=reply+1 where seq=#{pseq}	
+	</update>
+
+	
+	
+	<update id="boardUpdate" parameterType="java.util.Map">
+		update board set subject=#{subject}, content=#{content}, logtime=now()
+		where seq=#{seq}
+	</update>
+	
+
+
+	<delete id="boardDelete" statementType="CALLABLE">
+		{ call boardDelete(#{seq}) }
+	</delete> 
+	
+</mapper> 
+
+
+
+
+
+
+
+
+
+

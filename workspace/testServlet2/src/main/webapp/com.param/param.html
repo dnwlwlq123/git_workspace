@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+table{
+ border-collapse: collapse;
+ }
+ #xDiv, #yDiv {
+	font-size:8pt;
+	color: red; 
+ }
+ </style>
+</head>
+<body>
+	<form name="personForm" method="get" action="http://localhost:8080/testServlet2/paramServlet">
+	<table border="1" cellpadding="5">
+	 <td align="center">이름</td>
+	 <td><input type="text" name="name" id="name" placeholder="이름 입력" size="9">   
+           			<div id="nameDiv"></div></td>
+     <tr>
+     <td align="center">나이</td>
+	 <td><input type="text" name="age" id="age" placeholder="나이 입력" size="9">   
+           			<div id="ageDiv"></div></td>
+     <tr>
+     <td colspan="2" align="center">
+     <input type="button" value="출력" onclick="javascript:checkInput()">
+	</table>
+	</form>
+	
+	<script type="text/javascript">
+          function checkInput(){
+        	  document.getElementById("nameDiv").innerHTML = ""
+        	  document.getElementById("ageDiv").innerHTML = ""
+        	  
+        	  if(document.personForm.name.value == "") 
+        		  //alert("x의 값을 입력하시오")
+        		  document.getElementById("nameDiv").innerHTML = "이름 입력"
+        	  else if(document.personForm.age.value == "") 
+        		  //alert("y의 값을 입력하시오")
+        		  document.getElementById("ageDiv").innerHTML = "나이입력"
+        	  else document.personForm.submit();
+          }   
+       </script>
+</body>
+</html>

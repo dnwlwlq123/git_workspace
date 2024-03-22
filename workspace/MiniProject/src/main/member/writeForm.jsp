@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="">
+<style type="text/css">
+table {
+	border-collapse: collapse;
+}
+</style>
+</head>
+<body>
+    <form name="writeform" method="post" action="write.jsp"> 
+        <table border="1" cellspacing="0" cellpadding="5">
+            <tr>
+                <th width="70">이름</th> 
+                <td>
+                    <input type="text" name="name" id="name" size="20" placeholder="이름 입력" />
+                    <div id="nameDiv" style="font-size: 8pt; font-weight:bold; color: red;"></div>
+                </td>
+            </tr>
+            <tr>
+            	<th>아이디</th>
+            	<td>
+	            	<input type="text" name="id" id="id" size="20" placeholder="아이디 입력" />
+	            	<!--  <input type="button" onclick= "checkId()" value="중복확인"></input>-->
+	            	<!-- <button type="button" onclick= "checkId()"; return false;>중복확인</button> -->
+	            	<input type="hidden" id="check" name="check">
+	            	<div id="idDiv" style="font-size: 8pt; font-weight:bold; color: red;"></div>
+	            </td>	
+            </tr>
+            <tr>
+            	<th>비밀번호</th>
+            	<td>
+	        		<input type="password" name="pwd" id="pwd" size="25" />
+	        		<div id="pwdDiv" style="font-size: 8pt; font-weight:bold; color: red;"></div>
+	        	</td>	
+       		 </tr>
+       		<tr>
+       			<th>재확인</th>
+	    		<td>	
+	    			<input type="password" name="repwd" id="repwd" size="25" />
+	    			<div id="repwdDiv" style="font-size: 8pt; font-weight:bold; color: red;"></div>
+	    		</td>
+   		 	</tr>
+            <tr>
+                <th>성별</th>
+                <td>
+                    <input type="radio" name="gender"  id="male" checked />
+                    <label for="male">남자</label>
+                    <input type="radio" name="gender" id= "female"/>
+                    <label for="female">여성</label>
+                </td>
+            </tr>
+            <tr>
+            <th>이메일</th>
+            	<td>
+					<input type="text" name="email1" size="15" />
+					@
+					<input type="text" name="email2" id="email2" size="15"/>
+					
+					
+					 <select name="email3" id="email3" onclick="change()">
+					 	<option value="">직접입력</option>
+						<option value="naver.com">naver.com</option>
+	                    <option value="gmail.com">gmail.com</option>
+	                    <option value="nate.com">nate.com</option>
+					</select>
+            	</td>
+		 	</tr>
+
+            <tr>
+                <th>휴대폰</th>
+                <td>
+                    <select name="tel1" style="widht:70px">
+	                        <option value="010" selected>010</option>
+	                        <option value="011">011</option>
+	                        <option value="019">019</option>
+                    </select>
+                    -
+                    <input type="text" name="tel2" size = "5" maxlength="4" />
+                    -
+					<input type="text" name="tel3" size = "5" maxlength="4" />
+                </td>
+            </tr>
+           
+
+            <tr>
+                <th>주 소</th>
+                <td>
+                    <input type="text" name="zipcode" id="zipcode" size="10"/>  <input type="button" onclick = "checkPost()" value="우편번호검색" ><br>
+                	<input type="text" name="addr1" id="addr1" size="50" placeholder="주소" /><br>
+					<input type="text" name="addr2" id="addr2" size="50" placeholder="상세주소"/>
+                </td>
+            </tr>
+         
+            <tr >
+                <td colspan="2" align="center">
+                    <input type="button" value="회원가입" onclick="checkWrite()">
+                    <!-- <button onclick="javascript:checkInput(); return false;">send</button> -->
+                    <input type="reset" value="다시작성">
+                </td>
+            </tr>
+
+        </table>
+   	</form>
+
+<!-- <script src="http://code.jQuery.com/jquery-3.7.1.min.js"></script>
+<script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+<script type="text/javascript" src="../js/member.js"></script>
+<script type="text/javascript"> -->
+
+
+
+
+
+
+
+
+
+
+
+
